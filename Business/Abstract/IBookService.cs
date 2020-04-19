@@ -6,7 +6,7 @@ using System.Text;
 namespace Business.Abstract
 {
     public interface IBookService
-    {
+    { 
         List<Book> GetAll();
         Book GetById(int id);
         List<Book> GetByAuthorId(int id);
