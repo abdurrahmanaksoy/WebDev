@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Business.Abstract;
-using Microsoft.AspNetCore.Http;
+﻿using Business.Abstract;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebAPI.Controllers
@@ -17,8 +12,13 @@ namespace WebAPI.Controllers
         {
             _bookService = bookService;
         }
+        //[HttpGet("getall")]
+        //public IActionResult  GetList()
+        //{
+        //    return Ok(_bookService.GetAll());
+        //}
         [HttpGet("getall")]
-        public IActionResult  GetList()
+        public IActionResult GetList()
         {
             return Ok(_bookService.GetAll());
         }

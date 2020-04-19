@@ -1,11 +1,9 @@
 ﻿using Business.Abstract;
 using DateAccess.Abstract;
-using DateAccess.Concrete.EntityFramework;
 using Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace Business.Concrete
 {
@@ -34,7 +32,6 @@ namespace Business.Concrete
         public List<Book> GetAll()
         {
             return _bookDal.GetList().ToList();
-
         }
 
         public Book GetById(int id)
