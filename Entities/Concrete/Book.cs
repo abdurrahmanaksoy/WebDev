@@ -9,7 +9,7 @@ namespace Entities.Concrete
     {
         public int Id { get; set; }
         public int AuthorId { get; set; }
-        public int Name { get; set; }
-        public int Price { get; set; }
+        public string Name { get; set; }
+        public decimal Price { get; set; }
     }
 }
